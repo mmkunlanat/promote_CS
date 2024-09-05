@@ -4,5 +4,8 @@ from django.shortcuts import render, HttpResponse
 def indexpage(request):
     return render(request, 'index.html')
 
+def loginpage(request):
+    return render(request, 'login.html')
+
 def registerpage(request):
     return render(request, 'register.html')
