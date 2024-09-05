@@ -6,3 +6,6 @@ def indexpage(request):
 
 def loginpage(request):
     return render(request, 'login.html')
+
+def registerpage(request):
+    return render(request, 'register.html')
