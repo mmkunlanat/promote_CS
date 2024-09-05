@@ -3,34 +3,17 @@
 {% block content %}
 {% load static %}
    <!-- Background Video-->
-   <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="{% static 'assets/mp4/bg.mp4' %}" type="video/mp4" /></video>
-    
-   <!-- Masthead-->
-   <div class="masthead" id="home">
-       <div class="masthead-content text-white">
-           <div class="container-fluid px-4 px-lg-0">
-               <h1 class="fst-italic lh-1 mb-4">กำลังทำเว็บไซต์</h1>
-               <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
-               <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                   <div class="row input-group-newsletter">
-                       <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                       <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                   </div>
-                   <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                   <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                   <div class="d-none" id="submitSuccessMessage">
-                       <div class="text-center mb-3 mt-2">
-                           <div class="fw-bolder">Form submission successful!</div>
-                           To activate this form, sign up at
-                           <br />
-                           <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                       </div>
-                   </div>
-                   <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-               </form>
-           </div>
-       </div>
-   </div>
-   
+<header class="masthead">
+    <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+        <div class="d-flex justify-content-center">
+            <div class="text-center">
+                <h1 class="mx-auto my-0 text-uppercase">Krunchie</h1>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5">ยินดีต้อนรับเข้าสู่สาขาวิทยาการคอมพิวเตอร์</h2>
+                <h2 class="text-white-50 mx-auto mt-2 mb-5"></h2>
+                <a class="btn btn-dark" href="#home">มาเริ่มกันเลย!!!</a>
+            </div>
+        </div>
+    </div>
+</header>
 
 {% endblock content %}
