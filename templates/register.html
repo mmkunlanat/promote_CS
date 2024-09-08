@@ -2,8 +2,9 @@
 
 {% block content %}
     {% load static %}
-    <h1>สมัครสมาชิก</h1>
+<div class="register-content"> 
     <form id="signup-form" action="signup.php" method="post">
+        <h1>สมัครสมาชิก</h1>
         <label for="username">ชื่อผู้ใช้:</label>
         <input type="text" id="username" name="username" required>
 
@@ -15,6 +16,7 @@
 
         <button type="submit">สมัครสมาชิก</button>
     </form>
+</div>
     <script src="script.js"></script>
 
     <style>
