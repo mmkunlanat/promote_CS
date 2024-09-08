@@ -2,40 +2,48 @@
 
 {% block content %}
     {% load static %}
-<div class="register-content"> 
-    <form id="signup-form" action="signup.php" method="post">
-        <h1>สมัครสมาชิก</h1>
-        <label for="username">ชื่อผู้ใช้:</label>
-        <input type="text" id="username" name="username" required>
+<section class="bg-register">
+    <div class="box">
+        <div class="register-content"> 
+            <form id="signup-form" action="signup.php" method="post">
+                <h1>สมัครสมาชิก</h1>
+                <label for="username">ชื่อผู้ใช้:</label>
+                <input type="text" id="username" name="username" required>
+        
+                <label for="email">อีเมล:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="password">รหัสผ่าน:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">สมัครสมาชิก</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-        <label for="email">อีเมล:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="password">รหัสผ่าน:</label>
-        <input type="password" id="password" name="password" required>
-
-        <button type="submit">สมัครสมาชิก</button>
-    </form>
-</div>
     <script src="script.js"></script>
 
-    <style>
+<style>
         /* styles.css */
 body {
     font-family: Arial, sans-serif;
-}
-
-h1 {
-    text-align: center;
+    display: flex;
+    justify-content: flex-end; /* จัดเนื้อหาไปทางขวา */
+    align-items: center; /* จัดเนื้อหาให้อยู่ตรงกลางแนวตั้ง */
+    height: 100vh; /* ทำให้ body เต็มหน้าจอ */
+    margin: 0;
 }
 
 form {
     max-width: 300px;
-    margin: auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
+    background-color: #f9f9f9;
+    margin-right: 155px; /* เพิ่มระยะห่างจากขอบขวา */
 }
+
 
 label {
     display: block;
