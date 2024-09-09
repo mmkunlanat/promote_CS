@@ -1,11 +1,71 @@
+{% extends "base.html" %}
+
 {% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="th">
 <head>
-    <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข้อมูลเกี่ยวกับหลักสูตร</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .section {
+            width: 45%;
+        }
+        p {
+            line-height: 1.5;
+        }
+    </style>
 </head>
 <body>
-    <section class="bg-about1">
-        <div class="container">
-            <h2>LLLlL</h2>
+    <h1>เรียนกับเราแล้วดียังไง?</h1>
+    <hr class="divider">
+    
+    <div class="content">
+        <div class="section">
+            <p>การศึกษาคอมพิวเตอร์ช่วยให้สามารถทำอาชีพที่หลากหลาย เช่น พัฒนาเว็บไซต์ ทำงานในภาครัฐ และอีกมากมาย</p>
         </div>
-    </section>
+        <div class="section">
+            <p>นักศึกษาสามารถทำงานเป็นอิสระได้ โดยไม่จำเป็นต้องอยู่ในสถานที่ทำงานเสมอ</p>
+        </div>
+    </div>
+
+    <h2>เราจะได้เรียนรู้อะไรบ้าง?</h2>
+    <div class="content">
+        <div class="section">
+            <h3>โครงข่ายคอมพิวเตอร์ (Computer Networks)</h3>
+            <p>เรียนรู้เกี่ยวกับการออกแบบ ติดตั้ง และบำรุงรักษาระบบเครือข่ายคอมพิวเตอร์</p>
+        </div>
+        <div class="section">
+            <h3>การสร้างซอฟต์แวร์ (Software Engineering)</h3>
+            <p>เรียนรู้เกี่ยวกับการสร้างซอฟต์แวร์ และการดูแลระบบซอฟต์แวร์</p>
+        </div>
+    </div>
+
+    <h2>จบแล้วทำอาชีพอะไรได้บ้าง?</h2>
+    <div class="content">
+        <div class="section">
+            <h3>นักพัฒนาซอฟต์แวร์ (Software Developer)</h3>
+        </div>
+        <div class="section">
+            <h3>นักวิเคราะห์ระบบ (Systems Analyst)</h3>
+        </div>
+    </div>
 </body>
+</html>
+{% endblock content %}
