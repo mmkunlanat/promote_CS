@@ -12,3 +12,12 @@ def registerpage(request):
 
 def aboutpage(request):
     return render(request, 'about.html')
+
+def about1page(request):
+    return render(request, 'about1.html')
+
+def about2page(request):
+    return render(request, 'about2.html')
+
+def about3page(request):
+    return render(request, 'about3.html')
