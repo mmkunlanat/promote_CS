@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <style>
+        section {
+            margin-top: 80px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body h1 {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #000;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .section {
+            width: 45%;
+        }
+        p {
+            line-height: 1.5;
+        }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+            }
+            .section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            section {
+                margin-top: 50px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <section class="bg-logo">
+        <h1>เราได้เรียนอะไรบ้าง?</h1>
+        <hr class="divider">
+        
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">โครงข่ายคอมพิวเตอร์ (Computer Network)</h3>
+                <p>เรียนรู้เกี่ยวกับการออกแบบ ติดตั้ง และบำรุงรักษาระบบเครือข่ายคอมพิวเตอร์<p>
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">การสร้างซอฟต์แวร์ (Software Engineering)</h3>
+                <p>เรียนรู้เกี่ยวกับกระะบวนการสรา้งซอฟต์แวร์ การวิเคราะห์ และออกแบบระบบซอฟต์แวร์ การทดสอบและบำรุงรักษา</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">ภูมิสารสนเทศ (Geogarphic Information)</h3>
+                <p>เรียนรู้เกี่ยวกับการประยุกต์ใช้เทคโนโลยีสารสนเทศในการวิเคราะห์และแสดงผลข้อมูลทางภูมิศาสตร์<p>
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">ภูมิปัญญาประดิษฐ์ (Artificial Intelligence)</h3>
+                <p>เรียนรู้เกี่ยวกับการพัฒนาโปรแกรมและเทคโนโลยีที่ใช้ในการจำลองความเป็นมนุษย์ของระบบคอมพิวเตอร์<p>
+            
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <div class="section">
+            <h3 style="font-weight: bold;">วิทยาการข้อมูล (Data Science)</h3>
+            <p>เรียนรู้เกี่ยวกับการทำงานกับข้อมูล การวิเคราะห์และแสดงผลข้อมูล และการประยุกต์ใช้เทคโนโลยีสารสนเทศในการดำเนินงาน<p>
+            
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">ความปลอดภัยของข้อมูล (Informmation Security)</h3>
+            <p>เรียนรู้เกี่ยวกับการป้องกันและควบคุมความปลอดภัยของข้อมูลในระบบคอมพิวเตอร์<p>
+            
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+            <h3 style="font-weight: bold;">ภูมิคุ้มกันและความเสียหายทางคอมพิวเเตอร์ (Computer Forensics and Cybercrime)</h3>
+            <p>เรียนรู้เกี่ยวกับการตรวจสอบและวิเคาระห์ข้อมูลที่ถูกโจมตี และการตรวจสอบเครื่องมือต่างๆที่ใช้ในการป้องกันการโจมตี<p>
+            
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">มีความเป็นอิสระในการทำงาน</h3>
+            <p>เรียนรู้เกี่ยวกับการออกแบบ ติดตั้ง และบำรุงรักษาระบบฐานข้อมูล รวมถึงเรียนรู้ SQL ซึ่งเป็นภาษาคิวรีสำหรับฐานข้อมูล<p>
+            
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+            <h3 style="font-weight: bold;">การประมวลผลภาพ (Image Procesing)</h3>
+            <p>เรียนรู้เกี่ยวกับการประมวลผลภาพดิจิทัลและวิเคราะห์ภาพ เช่น การปรับแต่งภาพ การค้นหาวัตถุ และการสกัดคุณลักษณะจากภาพ<p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+{% endblock content %}
