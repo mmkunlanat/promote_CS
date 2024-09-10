@@ -1,0 +1,138 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<head>
+    <style>
+        section {
+            margin-top: 80px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        body h1 {
+            margin-bottom: 20px;
+        }
+        .head3 {
+            font-size: 40px; /* เพิ่มขนาดของ h3 */
+            color: #000;
+            font-weight: bold;
+        }
+        h2 {
+            color: #000;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .section {
+            width: 45%;
+        }
+        p {
+            line-height: 1.5;
+        }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+            }
+            .section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 22px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            section {
+                margin-top: 50px;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <section class="bg-logo">
+        <h3 class="head3">จบแล้วทำอาชีพอะไรได้บ้าง ?</h3>
+
+        <hr class="divider">
+        
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">นักพัฒนาซอฟต์แวร์ (Software Developer)</h3>
+                <p>ผู้พัฒนาและออกแบบซอฟต์แวร์ที่มีประสิทธิภาพสูง เช่น โปรแกรมคอมพิวเตอร์ แอปพลิเคชันมือถือ และเว็บไซต์<p>
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">นักวิเคราะห์ระบบ (Systems Analyst)</h3>
+                <p>ผู้วิเคราะห์ ออกแบบ และปรับปรุงระบบสารสนเทศขององค์กร</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">นักวิทยาการข้อมูล (Data Scientist)</h3>
+                <p>ผู้ที่ใช้เทคโนโลยีเพื่อวิเคราะห์ข้อมูลและออกแบบโมเดลเพื่อสกัดความรู้สึกออกมาจากข้อมูล<p>
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">ผู้ดูแลระบบคอมพิวเตอร์ (System Administrator)</h3>
+                <p>ผู้รับผิดชอบการจัดการและดูแลระบบคอมพิวเตอร์ในองค์กร รวมถึงการติดตั้ง ปรับปรุงและบำรุงรักษาระบบ<p>
+            
+            </div>
+        </div>
+
+        
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">นักออกแบบเว็บไซต์ (Web Designer)</h3>
+                <p>ออกแบบและพัฒนาเว็บไซต์ที่สวยงามและใช้งานได้ง่าย ผู้เชี่ยวชาญด้านความ<p>
+            
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">นักธุรกิจดิจิทัล (Digital Marketer)</h3>
+                <p>ผู้ใช้เทคโนโลยีเพื่อสร้างและแพร่หลายแบรนด์ผ่านช่องทางออนไลน์<p>
+            
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">นักออกแบบ UX/UI (UX/UI Designer)</h3>
+                <p>ผู้ออกแบบประสบการณ์ผู้ใช้และอินเตอร์เฟสผู้ใช้เพื่อให้การใช้งานสะดวกสบายและมีประสิทธิภาพ<p>
+                
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">นักวิจัยด้านเทคโนโลยี (Technology Researcher)</h3>
+                <p>ผู้ศึกษาและวิจัยเทคโนโลยีใหม่ ๆ เพื่อพัฒนาและปรับปรุงระบบด้านเทคโลโลยี<p>
+                
+            </div>
+        </div>
+
+       
+    </section>
+</body>
+</html>
+{% endblock content %}
