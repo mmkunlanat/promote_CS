@@ -3,13 +3,12 @@
 {% load static %}
 
 {% block content %}
-<!DOCTYPE html>
-<html lang="th">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อมูลเกี่ยวกับหลักสูตร</title>
     <style>
+        section {
+            margin-top: 80px;
+        }
         body {
             font-family: Arial, sans-serif;
         }
@@ -30,42 +29,102 @@
         p {
             line-height: 1.5;
         }
+    
+        /* Media queries for responsive design */
+        @media (max-width: 1024px) {
+            .content {
+                flex-direction: column;
+            }
+            .section {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+            h3 {
+                font-size: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            section {
+                margin-top: 50px;
+            }
+        }
     </style>
+    
 </head>
 <body>
-    <h1>เรียนกับเราแล้วดียังไง?</h1>
-    <hr class="divider">
-    
-    <div class="content">
-        <div class="section">
-            <p>การศึกษาคอมพิวเตอร์ช่วยให้สามารถทำอาชีพที่หลากหลาย เช่น พัฒนาเว็บไซต์ ทำงานในภาครัฐ และอีกมากมาย</p>
+    <section class="bg-logo">
+        <h1>เรียนกับเราแล้วดียังไง?</h1>
+        <hr class="divider">
+        
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">สามารถกู้ กยศ. ได้ 100%</h3>
+                <p>เเนื่องจากเป็นประเภทวิชาและสาขาที่เป็นความต้องการหลักและมีความชัดเจนของการผลิตกำลังคน สำหรับนิตสิต นักศึกษาที่เข้าร่วมโครงการร ปีการศึกษา 2560<p>
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">เราอยู่ที่บ้านเราเอง/ใกล้บ้าน</h3>
+                <p>เรียนอยู่ที่บ้านเองหรือใกล้บ้านยังช่วยลดค่าใช้จ่ายในการเดินทางและเวลาในการเดินทางไป-กลับ ทำให้เรามีเวลามากขึ้นสำหรับการเรียนรู้และพัฒนาตนเอง</p>
+            </div>
         </div>
-        <div class="section">
-            <p>นักศึกษาสามารถทำงานเป็นอิสระได้ โดยไม่จำเป็นต้องอยู่ในสถานที่ทำงานเสมอ</p>
-        </div>
-    </div>
 
-    <h2>เราจะได้เรียนรู้อะไรบ้าง?</h2>
-    <div class="content">
-        <div class="section">
-            <h3>โครงข่ายคอมพิวเตอร์ (Computer Networks)</h3>
-            <p>เรียนรู้เกี่ยวกับการออกแบบ ติดตั้ง และบำรุงรักษาระบบเครือข่ายคอมพิวเตอร์</p>
+        <div class="content">
+            <div class="section">
+                <h3 style="font-weight: bold;">ไม่ตกเทรนด์ ข่าวสารเทคโนโลยี</h3>
+                <p>ไม่พลาดทุกเทรนด์เทคโนโลยีสำคัญด้วยการติดตามขาวสารและอัพเดตล่าสุดที่ได้รับความนิยมในปัจจุบัน เพื่อให้คุณได้เข้าใจและติมตามได้อย่างสม่ำเสมอ<p>
+            </div>
+            <div class="section">
+                <h3 style="font-weight: bold;">งานที่มีในอนาคตด้านเทคโนโลยีสูง</h3>
+                <p>สาขาวิทยาการคอมพวเตอร์เป็นสาขาที่มีอนาคตสูงในด้านเทคโนโลยี มีงานที่มากมายเชื่อมโยงกับเทคโนโลยี เช่น การพัฒนาโปรแกรม, เว็บไซต์, การออกแบบฐานข้อมูล ฯลฯ<p>
+            
+            </div>
         </div>
-        <div class="section">
-            <h3>การสร้างซอฟต์แวร์ (Software Engineering)</h3>
-            <p>เรียนรู้เกี่ยวกับการสร้างซอฟต์แวร์ และการดูแลระบบซอฟต์แวร์</p>
-        </div>
-    </div>
 
-    <h2>จบแล้วทำอาชีพอะไรได้บ้าง?</h2>
-    <div class="content">
-        <div class="section">
-            <h3>นักพัฒนาซอฟต์แวร์ (Software Developer)</h3>
+        
+        <div class="content">
+            <div class="section">
+            <h3 style="font-weight: bold;">จบแล้วมีงานทำแน่นอน</h3>
+            <p>สายอาชีพเทคโนโลยีเป็นสายอาชีพที่กำลังเติบโตอย่างต่อเนื่องโดยเฉพาะในยุคปัจจุบันที่เทคโนโลยีมีบทบาทสำคัญในการพัฒนาธุรกิจและเศษฐกิจให้ยั่งยืน<p>
+            
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">รายได้ที่มั่นคง</h3>
+            <p>นักศึกษาสาขาวิทยาการคอมพิวเตอร์มีโอกาศที่จะได้รับรายได้ที่มั่นคง และสูงกว่าสาขาอื่นๆ มีงานที่ต้องการและตลาดงานที่กว้างขวาง<p>
+            
+            </div>
         </div>
-        <div class="section">
-            <h3>นักวิเคราะห์ระบบ (Systems Analyst)</h3>
+
+        <div class="content">
+            <div class="section">
+            <h3 style="font-weight: bold;">ความหลากหลายของอาชีพ</h3>
+            <p>สาขาวิทยาการคอมพิวเตอร์มีอาชีพที่หลากหลายทำให้นักศึกษาสามารถเลือกที่จะทำงานในสายงานที่ตนเองชื่นชอบ และมีความสนใจได้ เช่น นักพัฒนาชอฟต์แวร์, นักวิเคราะห์ระบบ ฯลฯ<p>
+            
+            </div>
+            <div class="section">
+            <h3 style="font-weight: bold;">มีความเป็นอิสระในการทำงาน</h3>
+            <p>นักศึกษาสามารถทำงานอย่างเป็นอิสระ โดยไม่ต้องอยู่ในสถานที่ทำงานเดียวกันทุกวัน สามารถทำงานได้จากที่ใดก็ได้ เช่น ทำงานที่บ้าน, ทำงานจากสถานที่อื่นๆที่มีอินเทอร์เน็ต <p>
+            
+            </div>
         </div>
-    </div>
+    </section>
 </body>
 </html>
 {% endblock content %}
